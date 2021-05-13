@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="UTF-8">  
+     <title> Ruleta_Formulario</title> 
+    <style>
+        body{
+          text-align: center;  
+          background-color: #DAF7A6;
+          font-size: 30px;    
+        }
+        #botonp{
+          font-size: 20px;       
+          width: 300px;
+          height: 40px;    
+        }
+        form table{
+          margin: 2rem auto auto;    
+        }
+        #nomb{
+          font-size: 20px;        
+          width: 300px;
+          height: 30px;  
+        }
+        #box1{margin: auto 20px;}
+        #box2{margin: auto 20px;}
+        #box3{margin: auto 20px;}
+    </style>
+    <script type="text/javascript" src="fun_f2.js"> </script>  
+  </head>
+  <body>
+      <h1 id="tit" onmouseover="pintar('#FF5733')" onmouseout="pintar('#FFC300')"> T20 Ruleta Programadores Pbc Smn11 </h1>      
+        <div>
+          <p> Escuela: <i> CETis No.62 "Rafael Garcilita" </i> </p>    
+          <p> Alumno: <i> Guevara Solano Xavier </i> </p>
+          <p> Especialidad: <i> Programación </i></p>
+          <p> Materia: <i> DESAPEJEC </i> </p>
+          <img src="Imagenes/Xavier.png" alt="Xavier" width="200px" height="200px">  
+        </div>
+      <h2 id="titd" onmouseover="pintar('#FF5733')" onmouseout="pintar('#FFC300')"> Ruleta Pbc </h2>
+    <form name="Formulario">    
+     <table>
+      <tr> 
+       <td> 
+        <div name="box1" id="box1"> <img src="Imagenes/Perro.jpg" width="200px" height="200px"> </div>
+       </td> 
+       <td> 
+        <div name="box2" id="box2"> <img src="Imagenes/Perro.jpg" width="200px" height="200px"> </div>
+       </td>
+       <td> 
+        <div name="box3" id="box3"> <img src="Imagenes/Perro.jpg" width="200px" height="200px"> </div>
+       </td>      
+      </tr>     
+     </table>   
+      <p> <label for="nomb"> ¡Hola! ¿Cómo te llamas? </label>
+          <input type="text" name="nomb" id="nomb" required/> </p>         
+      <input id="botonp" type="button" value="Ruleta de Programadores 4F" onclick="tercs();">
+      <p> <label name="Sal01" id="Sal01"> El resultado fue: </label> 
+          <label name="resul" id="resul"> _**_ </label> </p>    
+    </form>     
+  </body>
+  <html>
